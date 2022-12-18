@@ -11,13 +11,13 @@ onChangEvent(event){
     this.setState ({userInput: event});
 }
 addItem(input){
-    if (input === ' ') {
+    if (input === '') {
         alert ("Please enter an item")
     }
     else {
 let listArray = this.state.todoList;
 listArray.push(input);
-this.setState({todoList: listArray, userInput: ' '})
+this.setState({todoList: listArray, userInput: ''})
     }
 }
 deleteItem(){
